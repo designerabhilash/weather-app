@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+.wrapper {
+    background-image: url(./pexels-jayson-delos-santos-1139541.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.weather-box {
+    width: 30rem;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.weather-date {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.weather-temprature {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center; 
+    border-bottom: 1px solid #ccc;
+    background-color: rgb(184, 181, 181);
+}
+.weather-date h5 {
+    font-size: 1rem;
+}
+.weather-date h5 span {
+    font-weight: 400;
+}
+.weather-day {
+    text-align: right;
+}
+.temp-box img {
+    width: 75px;
+}
+.temperature {
+    font-size: 3.5rem;
+    font-weight: 700;
+    display: flex;
+    flex-wrap: wrap;
+}
+.tempdescp, .feelslike {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 1rem;
+    width: 50%;
+}
+.tempdescp {
+    border-right: 1px solid #ccc;
+}
+.temp-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.temp-box {
+    padding: 1rem;
+    border-right: 1px solid #ccc;
+}
+.location {
+    padding: 1rem;
+    text-align: center;
+}
+.location h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+.location p {
+    font-size: 0.9rem;
+}
+.searchbycity {
+    padding: 1rem;
+}
+.searchsubmit {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    align-items: center;
+    gap: 10px;
+}
+.searchbycity input {
+    height: 38px;
+    border: 2px solid #ccc;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.searchbycity button {
+    padding: 0.35rem 1rem;
+    background-color: #3d405b;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.searchbycity button img {
+    filter: invert(1)
+}
+.description-time {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+/* Skeleton */
+
+/* .skeletondate {
+    background-color: #ddd;
+    width: 150px;
+    height: 20px;
+    display: inline-block;
+}
+.skeletonimg {
+    width: 75px;
+    height: 75px;
+    background-color: #ddd;
+    border-radius: 100%;
+} */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .temperature {
+        font-size: 2rem;
+    }
+}

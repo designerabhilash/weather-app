@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="weather-box">
+                <div class="weather-date">
+                    <h5>Date: <span class="date skeletondate">-</span> </h5>
+                    <h5 class="weather-day">Day</h5>
+                </div>
+                <div class="weather-temprature">
+                    <div class="temp-box">
+                        <div class="temp-content">
+                            <div class="temperature">
+                                Temperature
+                            </div>
+                            <div class="icon skeletonimg">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="location">
+                        <h5 class="citys">
+                            City
+                        </h5>
+                        <p class="country">
+                            Country
+                        </p>
+                    </div>
+                </div>
+                <div class="description-time">
+                    <div class="tempdescp">
+                        <span>Description:</span> <span class="temp-descp"></span><br/>
+                        <!-- <span>Feels Like:</span> <span class="feels-like"></span> -->
+                    </div>
+                    <div class="feelslike">
+                        <span>Time</span>: <span class="time"></span>
+                    </div>
+                </div>
+                <div class="searchbycity">
+                    <form class="searchsubmit">
+                        <input type="text" autocomplete="false" placeholder="Enter City" id="searchcity">
+                        <button><img src="search-24px.svg" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
