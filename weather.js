@@ -1,6 +1,7 @@
 const key = '8a5b8f62300c2b2d8f95e5bf25fd4a36';
 const requestCity = async (city) => {
-    const api = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
+    const proxy = 'https://cors-anywhere.herokuapp.com/';
+    const api = `${proxy}http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}`
     const response = await fetch(api)
     const data = await response.json();
     return data;
